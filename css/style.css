@@ -1,0 +1,280 @@
+/* ===========================================
+   Healthtech Quality & Strategy Consulting LLP
+   Version 1
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:#333;
+    background:#f5f8fb;
+    line-height:1.7;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+header{
+    background:#0B3C5D;
+    color:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo h2{
+    font-size:24px;
+}
+
+.logo p{
+    font-size:13px;
+    color:#d6e6f5;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav li{
+    margin-left:30px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#8fd3ff;
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero{
+    background:linear-gradient(135deg,#0B3C5D,#1976D2);
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:750px;
+    margin:auto;
+    font-size:20px;
+}
+
+.button{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    background:#00A896;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.button:hover{
+    background:#018a79;
+}
+
+/* ===========================
+   Sections
+=========================== */
+
+section{
+    padding:70px 0;
+}
+
+section h2{
+    text-align:center;
+    color:#0B3C5D;
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#0B3C5D;
+    margin-bottom:15px;
+}
+
+.card ul{
+    margin-top:15px;
+    padding-left:18px;
+}
+
+.card li{
+    margin-bottom:8px;
+}
+
+/* ===========================
+   About
+=========================== */
+
+#about p{
+    max-width:900px;
+    margin:20px auto;
+    text-align:center;
+}
+
+/* ===========================
+   Contact
+=========================== */
+
+form{
+    max-width:700px;
+    margin:30px auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-family:inherit;
+    font-size:15px;
+}
+
+textarea{
+    resize:vertical;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:#1976D2;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#125ea8;
+}
+
+.contact{
+    text-align:center;
+    margin-top:40px;
+}
+
+.contact p{
+    margin-bottom:10px;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    background:#0B3C5D;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:900px){
+
+header .container{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:20px;
+}
+
+nav li{
+    margin:10px 15px;
+}
+
+.hero{
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+section h2{
+    font-size:28px;
+}
+
+.logo h2{
+    font-size:20px;
+}
+
+}
